@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body > nav > div {
+  background-color: #2989DD;
+  color: white;
+}
+
+.navbar-default .navbar-text {
+    color: white;
+}
+
+body > nav > div > div > button:nth-child(2),
+body > nav > div > div > button:nth-child(3),
+body > nav > div > div > button:nth-child(4) {
+  margin: 1% 5%;
+}
+
+body > main > section > section > section > div > button {
+  float: right;
+}
+
+#contact-modal {
+  display: none;
+}

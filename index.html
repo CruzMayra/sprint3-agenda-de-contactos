@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1">
+    <title>Clase práctica: Agenda de contactos</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header col-md-12">
+          <h1 class="navbar-text" href="#">Lista de contactos</h1>
+          <button type="button" class="btn btn-default navbar-btn navbar-right">JQuery</button>
+          <button type="button" class="btn btn-default navbar-btn navbar-right"><i class="fa fa-search" aria-hidden="true"></i></button>
+          <button type="button" class="btn btn-default navbar-btn navbar-right" data-toggle="modal" data-target="#contact-modal"><i class="fa fa-plus" aria-hidden="true"></i></button>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container-fluid">
+      <section class="row saved-contact">
+        
+      </section>
+    </main>
+
+    <!-- modal para inicio de sesión -->
+      <div class="modal fade col-md-12 col-xs-12" id="contact-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header" align="center">
+              <h4>Contactos</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    						<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+    					</button>
+            </div>
+            <div id="div-forms">
+              <form id="login-form">
+                <div class="modal-body">
+                  <div class="input-group modal-input">
+                   <span class="input-group-addon" id="sizing-addon2"><i class="fa fa-user-circle" aria-hidden="true"></i></span>
+                   <input type="text" class="form-control name-contact" placeholder="Contacto" aria-describedby="sizing-addon2">
+                 </div>
+                 <div class="input-group modal-input">
+                  <span class="input-group-addon" id="sizing-addon2"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                  <input type="tel" maxlength="10" class="form-control number-contact" placeholder="Teléfono(10 dígitos)" aria-describedby="sizing-addon2">
+                </div>
+                <button type="submit" class="btn btn-warning btn-modal add-contact-button">AGREGAR</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- fin modal para inicio de sesión -->
+      <script type="text/javascript" src="js/app.js">
+
+      </script>
+
+  </body>
+</html>
